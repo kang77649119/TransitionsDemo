@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2C2-IO-gSc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--转场动画-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TransitionsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc5-Cd-xy4">
+                                <rect key="frame" x="26" y="96" width="167" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77096096028316374" blue="0.30605222882887428" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="7HW-pw-iKa"/>
+                                    <constraint firstAttribute="height" constant="30" id="T9q-ql-OfP"/>
+                                </constraints>
+                                <state key="normal" title="push和pop"/>
+                                <connections>
+                                    <action selector="goDemo1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWW-Co-GGe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpV-K9-A6j">
+                                <rect key="frame" x="26" y="145" width="167" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77096096030000005" blue="0.30605222879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="d1i-1X-WRM"/>
+                                    <constraint firstAttribute="height" constant="30" id="gwK-Jg-ARx"/>
+                                </constraints>
+                                <state key="normal" title="实战例子"/>
+                                <connections>
+                                    <action selector="goDemo2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nic-ip-c26"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qli-f0-Epo">
+                                <rect key="frame" x="26" y="193" width="167" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77096096030000005" blue="0.30605222879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="slF-TF-rW8"/>
+                                    <constraint firstAttribute="height" constant="30" id="uAW-9f-Dpx"/>
+                                </constraints>
+                                <state key="normal" title="present和dismiss"/>
+                                <connections>
+                                    <action selector="goDemo3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FNJ-PI-cgY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vpV-K9-A6j" firstAttribute="height" secondItem="pc5-Cd-xy4" secondAttribute="height" id="77G-aj-ILP"/>
+                            <constraint firstItem="pc5-Cd-xy4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="7pq-fp-tMN"/>
+                            <constraint firstItem="pc5-Cd-xy4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="D3v-gJ-T0d"/>
+                            <constraint firstItem="Qli-f0-Epo" firstAttribute="height" secondItem="vpV-K9-A6j" secondAttribute="height" id="GVC-3O-u83"/>
+                            <constraint firstItem="vpV-K9-A6j" firstAttribute="leading" secondItem="pc5-Cd-xy4" secondAttribute="leading" id="MNH-iG-MV8"/>
+                            <constraint firstItem="vpV-K9-A6j" firstAttribute="top" secondItem="pc5-Cd-xy4" secondAttribute="bottom" constant="19" id="Qan-3v-6Js"/>
+                            <constraint firstItem="Qli-f0-Epo" firstAttribute="top" secondItem="vpV-K9-A6j" secondAttribute="bottom" constant="18" id="WpM-yT-g7v"/>
+                            <constraint firstItem="vpV-K9-A6j" firstAttribute="width" secondItem="pc5-Cd-xy4" secondAttribute="width" id="Ygw-h8-8gB"/>
+                            <constraint firstItem="Qli-f0-Epo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="b9a-fl-5ZA"/>
+                            <constraint firstItem="Qli-f0-Epo" firstAttribute="width" secondItem="vpV-K9-A6j" secondAttribute="width" id="lzR-V5-kS7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="转场动画" id="32X-Xv-8Oe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="40.029985007496258"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QEi-eP-d4I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2C2-IO-gSc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QOW-gk-4Hs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UFJ-xW-T3g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4n-ri-JrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610" y="40"/>
+        </scene>
+    </scenes>
+</document>
